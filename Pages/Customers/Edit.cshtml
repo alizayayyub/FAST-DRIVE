@@ -1,0 +1,40 @@
+@page
+@model FAST_DRIVE.Pages.Customers.EditModel
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-4">
+        <h2 class="text-center mb-4">Edit Customer</h2>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
+
+        <form method="post">
+            <input type="hidden" asp-for="customer_id" />
+
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="name" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" asp-for="email" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input class="form-control" asp-for="phone" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Avg Rating</label>
+                <input class="form-control" asp-for="avg_rating" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Customers/Customers" class="btn btn-outline-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

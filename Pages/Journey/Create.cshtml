@@ -1,0 +1,60 @@
+@page
+@model FAST_DRIVE.Pages.Journey.CreateModel
+
+@{
+    ViewData["Title"] = "Create Journey";
+}
+
+<h2 class="text-center mb-3">Create New Journey</h2>
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">@Model.SuccessMessage</div>
+}
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Customer ID</label>
+        <input type="number" class="form-control" asp-for="Journey.customer_id" required />
+    </div>
+    <div class="form-group">
+        <label>Driver ID</label>
+        <input type="number" class="form-control" asp-for="Journey.driver_id" required />
+    </div>
+    <div class="form-group">
+        <label>Vehicle ID</label>
+        <input type="number" class="form-control" asp-for="Journey.vehicle_id" required />
+    </div>
+    
+    <div class="form-group">
+        <label>Start Time</label>
+        <input type="datetime-local" class="form-control" asp-for="Journey.start_time" />
+    </div>
+    <div class="form-group">
+        <label>End Time</label>
+        <input type="datetime-local" class="form-control" asp-for="Journey.end_time" />
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input type="text" class="form-control" asp-for="Journey.status" required />
+    </div>
+    <div class="form-group">
+        <label>Cost</label>
+        <input type="number" step="0.01" class="form-control" asp-for="Journey.cost" />
+    </div>
+    <div class="form-group"></div>
+        <label>Pickup City</label>
+        <input type="text" class="form-control" asp-for="Journey.pickup_location" required />
+    </div>
+    <div class="form-group">
+        <label>Dropoff City</label>
+        <input type="text" class="form-control" asp-for="Journey.dropoff_location" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a href="/Journey" class="btn btn-secondary">Cancel</a>
+</form>

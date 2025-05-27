@@ -1,0 +1,39 @@
+@page
+@model FAST_DRIVE.Pages.Ratings.CreateModel
+
+@{
+    ViewData["Title"] = "Create Rating";
+}
+
+<h2>Create New Rating</h2>
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-danger">@Model.Message</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Journey ID</label>
+        <input asp-for="Rating.JourneyId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Rater ID</label>
+        <input asp-for="Rating.RaterId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Rater Type</label>
+        <input asp-for="Rating.RaterType" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Score</label>
+        <input asp-for="Rating.Score" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Comment</label>
+        <textarea asp-for="Rating.Comment" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a class="btn btn-secondary" href="/Ratings/Ratings">Cancel</a>
+</form>

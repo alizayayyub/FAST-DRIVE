@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FAST_DRIVE
+build_property.RootNamespace = FAST_DRIVE
+build_property.ProjectDir = C:\Users\786\OneDrive\Desktop\FAST DRIVE\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\786\OneDrive\Desktop\FAST DRIVE
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/BestCustomers/BestCustomers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVzdEN1c3RvbWVyc1xCZXN0Q3VzdG9tZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/BestDrivers/BestDrivers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVzdERyaXZlcnNcQmVzdERyaXZlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Customers/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEN1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Drivers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Drivers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Drivers/Driver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVyc1xEcml2ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Drivers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Journey/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm91cm5leVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Journey/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm91cm5leVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Journey/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm91cm5leVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Journey/Journey.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm91cm5leVxKb3VybmV5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Payment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Payment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Payment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Payment/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Ratings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF0aW5nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Ratings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF0aW5nc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Ratings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF0aW5nc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Ratings/Ratings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF0aW5nc1xSYXRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Vehicle/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Vehicle/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Vehicle/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Vehicle/Vehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZVxWZWhpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/786/OneDrive/Desktop/FAST DRIVE/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c4rzgqc944

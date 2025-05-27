@@ -1,0 +1,39 @@
+@page
+@model FAST_DRIVE.Pages.Payment.PaymentsModel
+
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<h2 class="text-center mb-3">Payment List</h2>
+<a class="btn btn-primary mb-3" href="/Payment/Create">Create New</a>
+<p>Found @Model.PaymentsList.Count Payment.</p>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>payment_id</th>
+            <th>journey_id</th>
+            <th>amount</th>
+            <th>status</th>
+            <th>timestamp</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model.PaymentsList)
+        {
+            <tr>
+                <td>@payment.payment_id</td>
+                <td>@payment.journey_id</td>
+                <td>@payment.amount</td>
+                <td>@payment.status</td>
+                <td>@payment.timestamp</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Payment/Edit?id=@payment.payment_id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Payment/Delete?id=@payment.payment_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

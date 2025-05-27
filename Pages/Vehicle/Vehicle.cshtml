@@ -1,0 +1,42 @@
+@page
+@model FAST_DRIVE.Pages.Vehicle.VehicleModel
+@{
+    ViewData["Title"] = "Vehicles";
+}
+
+<h2 class="text-center mb-3">Vehicle List</h2>
+<a class="btn btn-primary mb-3" href="/Vehicle/Create">Create New Vehicle</a>
+<p>Found @Model.VehiclesList.Count Vehicles.</p>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Driver ID</th>
+            <th>Registration Number</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Capacity</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model.VehiclesList)
+        {
+            <tr>
+                <td>@vehicle.VehicleId</td>
+                <td>@vehicle.DriverId</td>
+                <td>@vehicle.RegistrationNumber</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Color</td>
+                <td>@vehicle.Capacity</td>
+                <td>@vehicle.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td style="white-space: nowrap;">
+                    <a class="btn btn-primary btn-sm" href="/Vehicle/Edit?id=@vehicle.VehicleId">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Vehicle/Delete?id=@vehicle.VehicleId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+@page 
+@model FAST_DRIVE.Pages.Drivers.EditModel
+
+@{
+    ViewData["Title"] = "Edit Driver";
+}
+
+<h2>Edit Driver</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">@Model.SuccessMessage</div>
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Driver.Id" />
+
+    <div class="mb-3">
+        <label asp-for="Driver.Name" class="form-label"></label>
+        <input asp-for="Driver.Name" class="form-control" />
+        <span asp-validation-for="Driver.Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Driver.Email" class="form-label"></label>
+        <input asp-for="Driver.Email" class="form-control" />
+        <span asp-validation-for="Driver.Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Driver.Phone" class="form-label"></label>
+        <input asp-for="Driver.Phone" class="form-control" />
+        <span asp-validation-for="Driver.Phone" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Driver.LicenseNumber" class="form-label"></label>
+        <input asp-for="Driver.LicenseNumber" class="form-control" />
+        <span asp-validation-for="Driver.LicenseNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Driver.AvgRating" class="form-label"></label>
+        <input asp-for="Driver.AvgRating" class="form-control" />
+        <span asp-validation-for="Driver.AvgRating" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+    <a href="/Drivers/Driver" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,55 @@
+@page
+@model FAST_DRIVE.Pages.Vehicle.CreateModel
+@{
+    ViewData["Title"] = "Create Vehicle";
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-4">
+        <h2 class="text-center mb-4">Create New Vehicle</h2>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+        }
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Driver ID*</label>
+                <input class="form-control" asp-for="DriverId" />
+                <span asp-validation-for="DriverId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Registration Number*</label>
+                <input class="form-control" asp-for="RegistrationNumber" />
+                <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Model*</label>
+                <input class="form-control" asp-for="Model" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Color</label>
+                <input class="form-control" asp-for="Color" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Capacity</label>
+                <input class="form-control" asp-for="Capacity" />
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-md-6 d-grid">
+                    <a class="btn btn-outline-secondary" href="/Vehicle/Vehicle">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

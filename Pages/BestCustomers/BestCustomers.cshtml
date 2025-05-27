@@ -1,0 +1,35 @@
+@page
+@model FAST_DRIVE.Pages.BestCustomers.BestCustomersModel
+
+@{
+    ViewData["Title"] = "Top 5 Customers";
+}
+
+<h2>Top 5 Customers Based on Recent Activity and Ratings</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Rides in Last 3 Months</th>
+            <th>Avg Monthly Spend</th>
+            <th>Five-Star Ratings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.CustomersList)
+        {
+            <tr>
+                <td>@customer.CustomerId</td>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>@customer.RidesLast3Months</td>
+                <td>£@customer.AvgMonthlySpend</td>
+                <td>@customer.FiveStarRatings</td>
+            </tr>
+        }
+    </tbody>
+</table>
+ 

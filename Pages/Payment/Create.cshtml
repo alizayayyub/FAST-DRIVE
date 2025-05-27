@@ -1,0 +1,30 @@
+@page
+@model FAST_DRIVE.Pages.Payment.CreateModel
+
+@{
+    ViewData["Title"] = "Create Payment";
+}
+
+<h2>Create New Payment</h2>
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-danger">@Model.Message</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Journey ID</label>
+        <input asp-for="Payment.JourneyId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Amount</label>
+        <input asp-for="Payment.Amount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input asp-for="Payment.Status" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+    <a class="btn btn-secondary" href="/Payment/Payment">Cancel</a>
+</form> 

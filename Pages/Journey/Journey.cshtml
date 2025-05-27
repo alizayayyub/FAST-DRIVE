@@ -1,0 +1,50 @@
+@page
+@model FAST_DRIVE.Pages.Journey.IndexModel
+@{
+    ViewData["Title"] = "Journey List";
+}
+<h2>All Journeys</h2>
+
+<a class="btn btn-primary mb-3" href="/Journey/Create">+ New Journey</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Driver</th>
+            <th>Vehicle</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Status</th>
+            <th>Cost</th>
+            <th>Created At</th>
+            <th>Pickup</th>
+            <th>Dropoff</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var journey in Model.JourneyList)
+        {
+            <tr>
+                <td>@journey.journey_id</td>
+                <td>@journey.customer_id</td>
+                <td>@journey.driver_id</td>
+                <td>@journey.vehicle_id</td>
+                <td>@journey.start_time</td>
+                <td>@journey.end_time</td>
+                <td>@journey.status</td>
+                <td>@journey.cost</td>
+                <td>@journey.created_at</td>
+                 <td>@journey.pickup_location</td>
+                <td>@journey.dropoff_location</td>
+
+                <td>
+                    <a class="btn btn-sm btn-warning" href="/Journey/Edit?id=@journey.journey_id">Edit</a>
+                    <a class="btn btn-sm btn-danger" href="/Journey/Delete?id=@journey.journey_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

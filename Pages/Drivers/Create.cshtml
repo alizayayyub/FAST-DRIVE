@@ -1,0 +1,44 @@
+@page
+@model FAST_DRIVE.Pages.Drivers.CreateModel
+
+@{
+    ViewData["Title"] = "Add New Driver";
+}
+
+<h2>Create New Driver</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>Name*</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Email*</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Phone*</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>License Number*</label>
+        <input asp-for="LicenseNumber" class="form-control" />
+        <span asp-validation-for="LicenseNumber" class="text-danger"></span>
+    </div>
+
+   
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="/Drivers/Drivers" class="btn btn-secondary">Cancel</a>
+</form>

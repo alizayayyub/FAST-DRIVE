@@ -1,0 +1,33 @@
+@page
+@model FAST_DRIVE.Pages.Vehicle.EditModel
+@{
+    ViewData["Title"] = "Edit Vehicle";
+}
+
+<h2>Edit Vehicle</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="VehicleId" />
+    <div class="form-group">
+        <label>Driver ID</label>
+        <input asp-for="DriverId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Registration Number</label>
+        <input asp-for="RegistrationNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Model</label>
+        <input asp-for="Model" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Color</label>
+        <input asp-for="Color" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Capacity</label>
+        <input asp-for="Capacity" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a class="btn btn-secondary" href="/Vehicle/Vehicle">Back</a>
+</form>

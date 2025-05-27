@@ -1,0 +1,43 @@
+@page
+@model FAST_DRIVE.Pages.Ratings.RatingsModel
+
+@{
+    ViewData["Title"] = "Ratings";
+}
+
+<h2 class="text-center mb-3">Ratings List</h2>
+<a class="btn btn-primary mb-3" href="/Ratings/Create">Create New</a>
+<p>Found @Model.RatingsList.Count Ratings.</p>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>rating_id</th>
+            <th>journey_id</th>
+            <th>rater_id</th>
+            <th>rater_type</th>
+            <th>score</th>
+            <th>comment</th>
+            <th>timestamp</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rating in Model.RatingsList)
+        {
+            <tr>
+                <td>@rating.rating_id</td>
+                <td>@rating.journey_id</td>
+                <td>@rating.rater_id</td>
+                <td>@rating.rater_type</td>
+                <td>@rating.score.ToString("0.0")</td>
+                <td>@rating.comment</td>
+                <td>@rating.timestamp</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Ratings/Edit?id=@rating.rating_id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Ratings/Delete?id=@rating.rating_id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

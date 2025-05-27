@@ -1,0 +1,43 @@
+@page
+@model FAST_DRIVE.Pages.Drivers.DriverModel
+
+@{
+    ViewData["Title"] = "Drivers";
+}
+
+<h2 class="text-center mb-3">Drivers List</h2>
+<a class="btn btn-primary mb-3" href="/Drivers/Create">Create New</a>
+<p>Found @Model.DriversList.Count Drivers.</p>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>License Number</th>
+            <th>Avg Rating</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var driver in Model.DriversList)
+        {
+            <tr>
+                <td>@driver.Id</td>
+                <td>@driver.Name</td>
+                <td>@driver.Email</td>
+                <td>@driver.Phone</td>
+                <td>@driver.LicenseNumber</td>
+                <td>@driver.AvgRating</td>
+                <td>@driver.CreatedAt</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Drivers/Edit?id=@driver.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Drivers/Delete?id=@driver.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
